@@ -9,6 +9,7 @@ ajax.onreadystatechange = function (e) {
   console.log(ajax.readyState);
   if (ajax.readyState === 4) {
     switch (ajax.status) {
+      // Successful responses
       case 200:
         console.log;
         "OK, the request has been successfully completed", ajax.status;
@@ -19,10 +20,23 @@ ajax.onreadystatechange = function (e) {
         "Created, the request has succeeded and a new resource has been created",
           ajax.status;
         break;
+      // Redirection messages
+      case 300:
+        console.log;
+        "Multiple Choice, This request has more than one possible response.",
+          ajax.status;
+        break;
+      case 302:
+        console.log;
+        "Found, The response code means that the URI of requested resource has been changed temporarily.",
+          ajax.status;
+        break;
       case 304:
         console.log;
         "Not modified, This is used for caching purposes.", ajax.status;
         break;
+
+      //Client error responses
       case 400:
         console.log;
         "Bad request, the server could not understand the request due to invalid syntax.",
@@ -43,6 +57,7 @@ ajax.onreadystatechange = function (e) {
         "Not found, the server can not find the requested resource",
           ajax.status;
         break;
+      // Server error responses
       case 500:
         console.log;
         "Server error request, the server has encountered a situation it doesn't know how to handle.",
