@@ -1,0 +1,39 @@
+body {
+  background-color: #ccc;
+}
+:root {
+  --mainChocolate: chocolate;
+}
+h1,
+h3 {
+  text-align: center;
+}
+.main {
+  width: 700px;
+  padding: 40px;
+  margin: 0 auto;
+  background: #fff;
+  padding-top: 40px;
+  border-radius: 4px;
+}
+
+.item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 2px solid var(--mainChocolate);
+}
+
+.item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #ccc;
+  padding: 10px;
+}
+
+.item img {
+  width: 40px;
+  margin-right: 20px;
+}
