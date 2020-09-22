@@ -1,4 +1,4 @@
-# XMLHtt-Request
+# XMLHttp-Request
 
 Simple REST & API that you can use whenever you need for fake data.
 
